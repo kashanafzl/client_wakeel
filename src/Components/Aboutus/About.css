@@ -1,0 +1,45 @@
+
+
+.mainaboutdiv{
+    padding-inline: 2rem !important;
+    padding-block: 5rem !important;
+    font-family: 'Montserrat',  'sans-serif';
+
+}
+
+
+
+.aboutusdiv img{
+    width: 500px;
+    height: 200px;
+}
+
+.aboutusmainsecdiv{
+    background: rgba(170, 145, 102, 0.14);
+    padding-top: 5rem !important;
+    margin-block: 5rem !important;
+}
+
+
+.aboutmanpicdiv img{
+    height: 250px;
+    width: 350px;
+}
+
+
+.whatiidiv{
+    text-align: center;
+}
+
+
+.utubevideo img{
+    width: 800px;
+    height: 500px;
+}
+
+@media screen and (max-width:500px) {
+    .utubevideo img{
+  display: none;
+    }
+    
+}

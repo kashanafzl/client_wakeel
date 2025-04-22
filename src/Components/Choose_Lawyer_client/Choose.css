@@ -1,0 +1,522 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+#maindiv-signup-to-sana{
+    background: var(--bluecolor);
+    height: 100vh;
+    /* border: 1px solid red; */
+    padding-inline: 90px;
+    padding-top: 100px;
+}
+
+#maindiv-signup-to-sana img{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    
+    
+}
+
+#maindiv-signup-to-sana h4{
+    font-family: 'Montserrat', sans-serif;  
+    font-weight: 600;
+    font-size: 22px;
+    padding-top: 20px;
+    color: var(--blackColor);
+    text-align: center;
+}
+
+
+#maindiv-signup-to-sana p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    color: var(--blackColor);
+    opacity: 0.6;
+}
+
+#maindiv-signup-to-sana .line{
+    height: 2px;
+    width: 40px;
+    background-color: var(--greenColor);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+.leftsidemain-sinup-to-sana{
+    background-color: #fff;
+    height: 90vh;
+    padding-inline: 40px;
+    /* border: 1px solid red; */
+}
+
+.icon-and-button-parentdiv{
+    text-align: end;
+    margin-top: 20px;
+}   
+
+.icon-and-button-parentdiv .worldicon{
+    color: var(--darkGray);
+    margin-right: 15px;
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+.icon-and-button-parentdiv button{
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    background-color: var(--bluecolor);
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.left-sign-up-to-sana{
+    text-align: center;
+}
+
+.left-sign-up-to-sana h2{
+    padding-top: 30px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--blackColor);
+}
+
+.left-sign-up-to-sana p{
+    font-family: 'Poppins', sans-serif;
+    color: var(--blackColor);
+    opacity: 0.6;
+    font-size: 13px;
+}
+
+.Picandtextmaindiv{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-inline: 140px; */
+    border-radius: 10px;
+    margin-top: 20px;
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: border-color 0.1s ease; /* Add transition for smoother effect */
+    border: 2px solid transparent; /* Add initial transparent border */
+    
+}
+
+.Picandtextmaindiv:hover{
+      border: 2px solid var(--bluecolor);
+      cursor: pointer;
+      box-shadow: -6px 0px 10px rgba(0, 0, 0, 0.04);
+   
+      
+}
+
+.greencheckiconparentdiv {
+    display: flex;
+    
+}
+
+.greencheckicon{
+    color: var(--greenColor);
+}
+
+
+#pic1{
+    margin-left: 30px;
+}
+#pic2{
+    margin-left: 10px;
+}
+
+
+.Picandtextmaindiv img{
+    height:50px;
+    width: 50px;
+}
+
+
+
+
+.heading6andparagraph h6{
+    font-family: 'Montserrat', sans-serif;  
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--blackColor);
+    text-align: left;
+    margin-bottom: 6px;
+    padding-top: 18px;
+}
+
+.heading6andparagraph p{
+    font-family: 'Poppins', sans-serif;
+    color: var(--blackColor);
+    opacity: 0.6;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#secondpara{
+    font-size: 11.90px;
+
+}
+
+#copyrightlastlinep{
+    margin-top: 30px;
+}
+
+
+/* All media queries */
+
+@media screen and (max-width:2000px){
+   
+    #maindiv-signup-to-sana {
+        text-align: center;
+    }
+    .left-sign-up-to-sana{
+        margin-top: 100px;
+    }
+    #maindiv-signup-to-sana h4{
+        font-size: 30px;
+    }
+
+    #maindiv-signup-to-sana p{
+        font-size: 20px;
+    }
+    .heading6andparagraph h6{
+        font-size: 20px;
+    }
+    .heading6andparagraph p{
+        font-size: 18px;
+    }
+
+    .greencheckiconparentdiv{
+        margin-right: 100px;
+    }
+
+}
+
+
+
+@media screen and (max-width:1950px){
+   
+    .Picandtextmaindiv{
+        text-align: center;
+     
+    }
+
+    .left-sign-up-to-sana{
+        margin-top: 100px;
+    }
+    #maindiv-signup-to-sana h4{
+        font-size: 30px;
+    }
+
+    #maindiv-signup-to-sana p{
+        font-size: 20px;
+    }
+    .heading6andparagraph h6{
+        font-size: 20px;
+    }
+    .heading6andparagraph p{
+        font-size: 18px;
+    }
+    .greencheckiconparentdiv{
+        margin-right: 100px;
+    }
+    .copyrightp p{
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width:1500px){
+   
+    .Picandtextmaindiv{
+        text-align: center;
+  
+    }
+
+    .left-sign-up-to-sana{
+        margin-top: 50px;
+    }
+    #maindiv-signup-to-sana h4{
+        font-size: 25px;
+    }
+
+    #maindiv-signup-to-sana p{
+        font-size: 16px;
+    }
+    .heading6andparagraph h6{
+        font-size: 20px;
+    }
+    .heading6andparagraph p{
+        font-size: 18px;
+    }
+    .greencheckiconparentdiv{
+        margin-right: 100px;
+    }
+    .copyrightp p{
+        padding-top: 20px;
+    }
+}
+
+
+
+@media screen and (max-width:2000px) {
+    .createaccounth4andpdiv{
+        padding-inline: 80px;
+
+        margin-top: 50px;
+    }
+
+    #maindiv-createaccount-to-sana h4{
+        font-size: 25px;
+    }
+
+    #maindiv-createaccount-to-sana p{
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .createaccounth4andpdiv h4{
+        font-size: 25px;
+    }
+    .createaccounth4andpdiv p{
+        font-size: 16px;
+    }
+    .createaccounth4andpdiv input {
+        padding: 15px;
+    }
+    .createaccounth4andpdiv button{
+        padding: 15px;
+    }
+    .createaccounth4andpdiv small{
+        font-size: 15px;
+    }
+    .createaccounth4andpdiv input{
+        font-size: 15px;
+    }
+
+    .facebookbtndiv span{
+        font-size: 14px;
+    }
+
+    .signupline span{
+        font-size: 14px;
+    }
+ }
+
+ @media screen and (max-width:1450px) {
+    .createaccounth4andpdiv{
+        padding-inline: 50px;
+        /* border: 2px solid red; */
+        margin-top: 30px;
+    }
+
+    #maindiv-createaccount-to-sana h4{
+        font-size: 25px;
+    }
+
+    #maindiv-createaccount-to-sana p{
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .createaccounth4andpdiv h4{
+        font-size: 25px;
+    }
+    .createaccounth4andpdiv p{
+        font-size: 16px;
+    }
+    .createaccounth4andpdiv input {
+        padding: 15px;
+    }
+    .createaccounth4andpdiv button{
+        padding: 15px;
+    }
+    .createaccounth4andpdiv small{
+        font-size: 15px;
+    }
+    .createaccounth4andpdiv input{
+        font-size: 15px;
+    }
+
+    .facebookbtndiv span{
+        font-size: 14px;
+    }
+
+    .signupline span{
+        font-size: 14px;
+    }
+ }
+
+
+@media screen and (max-width:1310px){
+   
+    .Picandtextmaindiv{
+        text-align: center;
+   
+    }
+
+    .left-sign-up-to-sana{
+        margin-top: 50px;
+    }
+    #maindiv-signup-to-sana h4{
+        font-size: 20px;
+    }
+
+    #maindiv-signup-to-sana p{
+        font-size: 16px;
+    }
+    .heading6andparagraph h6{
+        font-size: 13px;
+    }
+    .heading6andparagraph p{
+        font-size: 12px;
+    }
+    .greencheckiconparentdiv{
+        margin-right: 0px;
+    }
+    .copyrightp p{
+        padding-top: 10px;
+    }
+}
+
+
+
+
+@media screen and (max-width:1067px){
+
+    #maindiv-signup-to-sana h4{
+        font-size: 20px;
+    }
+
+    #maindiv-signup-to-sana p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:995px){
+    
+
+
+
+    #maindiv-signup-to-sana h4{
+        font-size: 18px;
+    }
+
+    #maindiv-signup-to-sana p{
+        font-size: 12px;
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width:995px){
+    
+
+    #maindiv-signup-to-sana{
+    
+        text-align: center;
+       
+    }
+
+
+
+@media screen and (max-width:720px){
+    
+
+}
+
+/* mobile screen */
+
+
+
+@media screen and (max-width:482px){
+    
+    .leftsidemain-sinup-to-sana{
+        padding-inline: 50px;
+    }
+    .heading6andparagraph p{
+        margin-bottom: 0;
+    }
+
+    #picandtext{
+        padding-right: 0px;
+    }
+    .greencheckicon{
+        display: none;
+    }
+    #secondpara{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:470px){
+    
+    #maindiv-signup-to-sana img{
+        margin-left: 15px;
+    }
+
+    
+    #picandtext{
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width:441px){
+
+    #maindiv-signup-to-sana img{
+        margin-left: 15px;
+    }
+
+    .leftsidemain-sinup-to-sana{
+        padding-inline: 20px;
+    }
+    #secondpara{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:375px){
+    
+    .leftsidemain-sinup-to-sana{
+        padding-inline: 20px;
+    }
+    .heading6andparagraph h6{
+        padding-top: 0px;
+    }
+
+    .heading6andparagraph p{
+       font-size: 10px;
+    }
+
+    .left-sign-up-to-sana h2{
+        font-size: 25px;
+    }
+    .left-sign-up-to-sana p{
+        font-size: 12px;
+    }
+ 
+}
+
+
+
+@media screen and (max-width:700px){
+    
+    #maindiv-signup-to-sana{
+       display: none;
+    }
+    .copyrightp p{
+        padding-top: 80px;
+    }
+
+}
+}

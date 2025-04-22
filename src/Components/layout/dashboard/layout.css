@@ -1,0 +1,41 @@
+.layout {
+    display: flex;
+    min-height: 100vh;
+
+  }
+  
+  .siderbar {
+    width: 300px;
+    background-color: #1A1919;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+  }
+  
+  .leftsidebar {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+            width: 100%;
+  }
+  
+
+  
+  .leftsidebar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    line-height: 3rem;
+
+    align-items: center;
+
+  }
+  
+  .leftsidebar a:hover,
+  .leftsidebar a.active {
+    background: #2A446F;
+    font-weight: bold;
+    color: #fff;
+    padding: 2px 20px;
+  }
+  
