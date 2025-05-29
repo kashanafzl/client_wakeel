@@ -14,5 +14,10 @@
     --darkGray : #656575;
     --gray : #CFCFCF;
     --bluecolor : #2A446F;
+      --mcolor : #2A446F;
     
+}
+
+html{
+    font-size: 62.5%;
 }

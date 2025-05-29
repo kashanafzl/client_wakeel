@@ -1,0 +1,189 @@
+/* Container */
+.footer-container {
+    width: 100%;
+}
+
+/* Background Section */
+.bgfooterdiv {
+    position: relative;
+    background-image: url('../../../Asserts/Img/footerimg.png');
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding-inline: 4rem;
+}
+
+/* Blue Overlay */
+.bgfooterdiv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(105, 105, 163, 0.6); /* Blue overlay with opacity */
+    z-index: 1;
+}
+
+/* Logo */
+.footer-logo {
+    width: 150px; /* Adjust size */
+    position: relative;
+    z-index: 2; /* Ensure it appears above overlay */
+}
+
+/* Footer Content */
+.mainfooterdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 2rem;
+    padding-inline: 4rem;
+    position: relative;
+    z-index: 2; /* Ensures content is above overlay */
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Location Section */
+.footer-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location-icon {
+    width: 50px; /* Adjust icon size */
+}
+
+/* Typography */
+.mainfooterdiv h3 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.mainfooterdiv h4 {
+    font-size: 3rem;
+}
+
+.mainfooterdiv p {
+    color: #D2AB2D;
+    font-size: 3rem;
+}
+
+/* Button */
+.footer-button {
+    border: 2px solid #D2AB2D;
+    background-color: transparent;
+    color: #D2AB2D;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-button:hover {
+    background-color: #D2AB2D;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .mainfooterdiv {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .mainfooterdiv h3 {
+        font-size: 1.8rem;
+    }
+
+    .mainfooterdiv h4 {
+        font-size: 1.5rem;
+    }
+
+    .mainfooterdiv p {
+        font-size: 1.3rem;
+    }
+
+    .footer-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .bgfooterdiv {
+        height: 40vh;
+        padding-inline: 2rem;
+    }
+
+    .footer-logo {
+        width: 120px;
+    }
+
+    .mainfooterdiv {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .mainfooterdiv h3 {
+        font-size: 1.5rem;
+    }
+
+    .mainfooterdiv h4 {
+        font-size: 1.3rem;
+    }
+
+    .mainfooterdiv p {
+        font-size: 1.2rem;
+    }
+
+    .footer-button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bgfooterdiv {
+        height: 35vh;
+        padding-inline: 1rem;
+    }
+
+    .footer-logo {
+        width: 100px;
+    }
+
+    .mainfooterdiv {
+        gap: 1rem;
+    }
+
+    .mainfooterdiv h3 {
+        font-size: 1.3rem;
+    }
+
+    .mainfooterdiv h4 {
+        font-size: 1.2rem;
+    }
+
+    .mainfooterdiv p {
+        font-size: 1rem;
+    }
+
+    .footer-button {
+        font-size: 0.8rem;
+        padding: 0.6rem 1rem;
+    }
+}

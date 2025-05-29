@@ -1,0 +1,47 @@
+.mainflexplus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.plusdiv {
+    border-right: 2px solid #2A446F;
+    padding-right: 5rem;
+    min-width: 200px;
+}
+
+.plusdiv:last-child {
+    border-right: none;
+}
+
+.plusdiv h1 {
+    font-size: 4rem;
+    color: #2A446F;
+}
+
+.plusdiv p {
+    color: #616161;
+    font-size: 1.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .plusdiv {
+        padding-right: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainflexplus {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .plusdiv {
+        border-right: none;
+        padding-right: 0;
+    }
+}

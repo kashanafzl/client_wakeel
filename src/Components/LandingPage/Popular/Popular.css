@@ -1,0 +1,145 @@
+.mainp {
+    padding: 4rem;
+    background-color: var(--mcolor);
+    color: #fff;
+}
+
+.popularh1andpdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7rem 4rem;
+}
+
+.popularh1andpdiv h1 {
+    font-size: 4rem;
+}
+
+.popularh1andpdiv p {
+    font-size: 2rem;
+    width: 40%;
+}
+
+/* Main Content Flexbox */
+.mainpandtext {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+    padding: 4rem;
+}
+
+.rightpdiv span,
+.rightpdiv li {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.6rem;
+}
+
+.rightdivh3andp h3 {
+    font-size: 3rem;
+    padding-block: 2rem;
+}
+
+.rightdivh3andp p {
+    font-size: 1.8rem;
+    padding-top: 5rem;
+}
+
+.p1imddiv img {
+    width: 300px;
+}
+
+.arrowdiv {
+    text-align: end;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .popularh1andpdiv {
+        flex-direction: column;
+        text-align: center;
+        padding: 5rem 3rem;
+    }
+
+    .popularh1andpdiv p {
+        width: 60%;
+        font-size: 1.8rem;
+    }
+
+    .mainpandtext {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .p1imddiv img {
+        width: 250px;
+    }
+
+    .rightdivh3andp h3 {
+        font-size: 2.5rem;
+    }
+
+    .rightdivh3andp p {
+        font-size: 1.6rem;
+        padding-top: 3rem;
+    }
+
+    .arrowdiv {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .popularh1andpdiv p {
+        width: 80%;
+        font-size: 1.6rem;
+    }
+
+    .rightpdiv span,
+    .rightpdiv li {
+        font-size: 1.4rem;
+    }
+
+    .rightdivh3andp h3 {
+        font-size: 2rem;
+    }
+
+    .rightdivh3andp p {
+        font-size: 1.4rem;
+    }
+
+    .p1imddiv img {
+        width: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .popularh1andpdiv h1 {
+        font-size: 3rem;
+    }
+
+    .popularh1andpdiv p {
+        width: 90%;
+        font-size: 1.4rem;
+    }
+
+    .p1imddiv img {
+        width: 180px;
+    }
+
+    .rightdivh3andp h3 {
+        font-size: 1.8rem;
+    }
+
+    .rightdivh3andp p {
+        font-size: 1.2rem;
+    }
+
+    .rightpdiv span,
+    .rightpdiv li {
+        font-size: 1.2rem;
+    }
+}

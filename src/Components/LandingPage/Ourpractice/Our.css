@@ -1,0 +1,57 @@
+.mainourpracticediv {
+    background-color: #2A446F;
+    color: #FFF;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.mainourpracticediv h1 {
+    font-size: 5rem;
+    margin-bottom: 0rem;
+}
+
+.mainflexoldiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-block: 4rem;
+    gap: 2rem;
+}
+
+.o1maindiv {
+    width: 30%;
+    text-align: center;
+    padding: 1rem;
+    min-width: 280px;
+    padding-block: 4rem;
+}
+
+.o1maindiv img {
+    background-color: #385B94;
+    padding: 2rem;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.o1maindiv h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.o1maindiv p {
+    font-size: 1.6rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .o1maindiv {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .o1maindiv {
+        width: 100%;
+    }
+}

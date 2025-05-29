@@ -1,0 +1,96 @@
+.navbardiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 6rem;
+    padding-block: 10px;
+    background: white;
+    position: relative;
+  }
+  
+  .logo img {
+    width: 250px;
+  }
+  
+  /* Desktop Navigation */
+  .uflex {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+    margin: 0;
+  }
+  
+  .uflex li a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #616161;
+    transition: color 0.3s;
+  }
+  
+  .uflex li a:hover {
+    color: #D2AB2D;
+  }
+  
+  /* Sign In Button */
+  .signinbtn button {
+    padding: 0.6rem 1.5rem;
+    background-color: #D2AB2D;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background 0.3s;
+    cursor: pointer;
+  }
+  
+  .signinbtn button:hover {
+    background-color: #b29023;
+  }
+  
+  /* Mobile Menu Button */
+  .menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  /* Mobile Navigation */
+  @media (max-width: 768px) {
+    .uflex {
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 2;
+      width: 250px;
+      height: 100%;
+      background: white;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      padding: 50px;
+      transition: right 0.3s ease-in-out;
+    }
+  
+    .uflex.open {
+      right: 0;
+    }
+  
+    .menu-btn {
+      display: block;
+    }
+  
+    .signinbtn {
+      display: none;
+    }
+  
+    .overlay {
+      position: fixed;
+      inset: 0;
+      /* background: rgba(0, 0, 0, 0.5); */
+    }
+  }
+  

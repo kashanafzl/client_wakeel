@@ -14,13 +14,15 @@ import Blog from './Components/Blog/Blog';
 import Layout from './Components/layout/dashboard/Layout';
 import Dashboard from './Components/layout/dashboard/Dashboard';
 import Mycase from './Components/layout/Mycase/Mycase';
+import Home from './Components/LandingPage/Home';
 
 export default function App() {
   return (
     <Router>
         <Routes>
           
-          <Route path="/" element={<Main />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/main" element={<Main />} />
           <Route path="/createaccount" element={<CreateAccount />} />
           <Route path="/login" element={<Login />} />
           <Route path="/verification" element={<Verification />} />

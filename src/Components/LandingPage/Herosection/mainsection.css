@@ -1,0 +1,112 @@
+/* Main Container */
+.mainflexdiv {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 6rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem; /* Adds spacing between image and text */
+    text-align: left;
+}
+
+/* Image Section */
+.mainimg {
+    flex: 1;
+    max-width: 500px;
+}
+
+.mainimg img {
+    width: 100%;
+    height: auto;
+}
+
+/* Content Section */
+.maincontentdiv {
+    max-width: 600px;
+}
+
+.maincontentdiv h1 {
+    color: var(--mcolor);
+    font-size: 4rem;
+    line-height: 1.3;
+}
+
+.maincontentdiv p {
+    color: #1C1B1F;
+    padding: 2rem 0;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.maincontentdiv button {
+    background-color: var(--mcolor);
+    padding: 1rem 2rem;
+    border: none;
+    color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .mainflexdiv {
+        padding: 4rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .maincontentdiv {
+        width: 100%;
+    }
+
+    .maincontentdiv h1 {
+        font-size: 3.5rem;
+    }
+
+    .maincontentdiv p {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainflexdiv {
+        padding: 3rem;
+        gap: 2rem;
+    }
+
+    .mainimg {
+        max-width: 350px;
+    }
+
+    .maincontentdiv h1 {
+        font-size: 3rem;
+    }
+
+    .maincontentdiv p {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mainflexdiv {
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+
+    .mainimg {
+        max-width: 300px;
+    }
+
+    .maincontentdiv h1 {
+        font-size: 2.5rem;
+    }
+
+    .maincontentdiv p {
+        font-size: 1.2rem;
+    }
+
+    .maincontentdiv button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}

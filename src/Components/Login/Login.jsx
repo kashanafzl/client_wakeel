@@ -1,18 +1,15 @@
 import React, { useState } from 'react';
-import './Login.css';
-
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import Welcomepic from '../../Asserts/Img/law.svg';
-import facebook from '../../Asserts/Img/facebook.svg';
+import signuptolawyer from '../../Asserts/Img/law.svg';
+
 import google from '../../Asserts/Img/google.svg';
 
 import { Icon } from '@iconify/react';
 import { useNavigate } from 'react-router-dom';
 
-// React Toastify
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -22,15 +19,15 @@ export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const goToCreateAccountPage = () => {
+
+  const goToLoginPage = () => {
     navigate('/createaccount');
   };
 
-  const handleLogin = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Basic validation
-    if (!email || !password) {
+    if (!email || !password ) {
       toast.error('Please fill in all fields.');
       return;
     }
@@ -40,78 +37,83 @@ export default function Login() {
       return;
     }
 
-    // Simulate login success (replace with real API logic)
-    console.log('Logging in with:', { email, password });
 
-    toast.success('Login successful! Redirecting...');
+    // Simulate account creation
+    console.log('Creating account with:', { email, password });
+    toast.success('Account created successfully! Redirecting...');
+
     setTimeout(() => {
-      navigate('/dashboard'); // redirect to your desired route
+      navigate('/login');
     }, 2000);
   };
 
   return (
     <div>
+      <ToastContainer />
       <Container fluid>
         <Row>
-          <Col lg={5} md={12} id='maindiv-createaccount-to-sana'>
-            <img className='img-fluid' id='welcomepic' src={Welcomepic} alt="Welcome" />
+          <Col lg={5} md={12} id="maindiv-createaccount-to-sana">
+            <img className="img-fluid" src={signuptolawyer} alt="" />
           </Col>
 
           <Col lg={7} md={12}>
             <div className="leftsidemain-createaccount-to-sana">
               <div className="icon-and-button-parentdiv">
-                <Icon id='welcomesignupicon' icon="tabler:world" />
-                <button onClick={goToCreateAccountPage} id='welcomesignupbutton'>Sign Up</button>
+                <Icon id="worldicon1" icon="tabler:world" />
+                <button onClick={goToLoginPage} id="btncreateaccount">
+                  Sign In
+                </button>
               </div>
 
-              <div className='createaccounth4andpdiv'>
-                <h4>Login!</h4>
-                <p>Discover a world of natural remedies with <br /> our expert herbalists</p>
+              <div className="createaccounth4andpdiv">
+                <h4>Create an Account</h4>
+                <p>
+                  Discover a world of natural remedies with our expert <br /> herbalists
+                </p>
 
-                <form onSubmit={handleLogin}>
-                  <div className='smallandinputmaindiv2'>
-                    <small>Email</small>
+                <form onSubmit={handleSubmit}>
+                  <div className="smallandinputmaindiv1">
+                    <small>Your email</small>
                     <input
                       type="email"
-                      placeholder='Enter email'
+                      placeholder="Enter email here"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
 
-                  <div className='smallandinputmaindiv2'>
-                    <small>Password</small>
+                  <div className="smallandinputmaindiv1">
+                    <small>Your Password</small>
                     <input
                       type="password"
-                      placeholder='Enter Password'
+                      placeholder="Enter Password here"
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                     />
                   </div>
 
-                  <button id='signbtn' type='submit'>Login</button>
+
+                  <button id='signbtn' type="submit">Sign Up</button>
                 </form>
 
                 <div className="signupline">
                   <span>--- Or Sign in With ---</span>
                 </div>
+{/* 
+                <div className="facebookbtndiv">
+                  <img src={facebook} alt="" />
+                  <span>Sign up With Facebook</span>
+                </div> */}
 
-                <div className='facebookbtndiv1'>
-                  <img src={facebook} alt="Facebook" />
-                  <span>Sign in With Facebook</span>
-                </div>
-
-                <div id='googlebtndiv' className='facebookbtndiv1'>
-                  <img src={google} alt="Google" />
-                  <span>Sign in With Google</span>
+                <div id="googlebtndiv" className="facebookbtndiv">
+                  <img src={google} alt="" />
+                  <span>Sign up With Google</span>
                 </div>
               </div>
             </div>
           </Col>
         </Row>
       </Container>
-
-      <ToastContainer position="top-center" autoClose={3000} />
     </div>
   );
 }

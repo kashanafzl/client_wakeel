@@ -1,0 +1,84 @@
+.maindivofvideo {
+    background-color: #F2F2F2;
+    padding: 8rem 2rem;
+    text-align: center;
+}
+
+.maindivofvideo h1 {
+    font-size: 4rem;
+    color: var(--mcolor);
+    padding-bottom: 2rem;
+}
+
+.maindivofvideo p {
+    color: #616161;
+    font-size: 1.8rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+.videoimgdiv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoimg {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+
+.playicon {
+    position: absolute;
+    width: 80px;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .maindivofvideo h1 {
+        font-size: 3.5rem;
+    }
+
+    .maindivofvideo p {
+        font-size: 1.6rem;
+        width: 70%;
+    }
+
+    .playicon {
+        width: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .maindivofvideo h1 {
+        font-size: 3rem;
+    }
+
+    .maindivofvideo p {
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    .playicon {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .maindivofvideo h1 {
+        font-size: 2.5rem;
+    }
+
+    .maindivofvideo p {
+        font-size: 1.4rem;
+        width: 90%;
+    }
+
+    .playicon {
+        width: 50px;
+    }
+}

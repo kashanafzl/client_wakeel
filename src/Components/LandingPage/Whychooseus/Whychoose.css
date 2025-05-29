@@ -1,0 +1,92 @@
+.whycontent h1 {
+    text-align: center;
+    color: var(--mcolor);
+    padding-block: 4rem;
+    font-size: 4rem;
+}
+
+/* Responsive Container */
+.mainparentdivwhy {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 4rem;
+    padding-block: 6rem;
+    justify-content: center;
+    gap: 3rem;
+}
+
+/* Individual Cards */
+.whycontentdiv {
+    max-width: 30%;
+    text-align: center;
+}
+
+/* Image Styling */
+.whycontentdiv img {
+    width: 350px;
+    height: auto;
+}
+
+/* Headings */
+.mainparentdivwhy h3 {
+    color: #212121;
+    font-size: 2.5rem;
+    padding-block: 1.5rem;
+}
+
+/* Paragraph */
+.mainparentdivwhy p {
+    font-size: 1.6rem;
+    color: #616161;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .whycontent h1 {
+        font-size: 3.5rem;
+    }
+    .whycontentdiv {
+        max-width: 45%;
+    }
+    .mainparentdivwhy {
+        padding-inline: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .whycontent h1 {
+        font-size: 3rem;
+    }
+    .whycontentdiv {
+        max-width: 100%;
+    }
+    .mainparentdivwhy {
+        padding-inline: 1rem;
+        padding-block: 4rem;
+    }
+    .mainparentdivwhy h3 {
+        font-size: 2rem;
+    }
+    .mainparentdivwhy p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .whycontent h1 {
+        font-size: 2.5rem;
+    }
+    .mainparentdivwhy {
+        flex-direction: column;
+        align-items: center;
+    }
+    .whycontentdiv {
+        max-width: 90%;
+    }
+    .mainparentdivwhy h3 {
+        font-size: 1.8rem;
+    }
+    .mainparentdivwhy p {
+        font-size: 1.2rem;
+    }
+}
