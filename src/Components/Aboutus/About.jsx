@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import aboutuspic from '../../Asserts/Img/law.svg'
-import aboutman from '../../Asserts/Img/aboutmanpic.svg'
+import aboutman from '../../Asserts/Img/law.svg'
 
 
 export default function About() {

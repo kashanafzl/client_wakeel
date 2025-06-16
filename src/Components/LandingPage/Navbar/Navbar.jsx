@@ -2,13 +2,26 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../../Asserts/Img/logo.svg";
 import { Icon } from "@iconify/react";
+import { useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
+
+
+  
   const [menuOpen, setMenuOpen] = useState(false);
+    const navigate = useNavigate();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+    const goToLoginPage = () => {
+    navigate('/login');
+  };
+    const applythecase = () => {
+    navigate('/applycase');
+  };
+
 
   return (
     <nav className="navbardiv">
@@ -22,11 +35,11 @@ export default function Navbar() {
         <li><a href="/">Home</a></li>
         <li><a href="/">About Us</a></li>
         <li><a href="/">Practice Area</a></li>
-        <li><a href="/">Case Studies</a></li>
+        <li onClick={applythecase} >Apply To case</li>
       </ul>
 
       {/* Sign In Button */}
-      <div className="signinbtn">
+      <div onClick={goToLoginPage}  className="signinbtn">
         <button>Sign in</button>
       </div>
 

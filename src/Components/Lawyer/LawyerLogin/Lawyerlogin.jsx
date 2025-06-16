@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import './CreateAccount.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import signuptolawyer from '../../Asserts/Img/law.svg';
-import facebook from '../../Asserts/Img/facebook.svg';
-import google from '../../Asserts/Img/google.svg';
+import signuptolawyer from '../../../Asserts/Img/law.svg';
+
+
 
 import { Icon } from '@iconify/react';
 import { useNavigate } from 'react-router-dom';
@@ -14,21 +13,21 @@ import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-export default function CreateAccount() {
+export default function Lawyerlogin() {
   const navigate = useNavigate();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+
 
   const goToLoginPage = () => {
-    navigate('/login');
+    navigate('/lawyercreateanaccount');
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!email || !password || !confirmPassword) {
+    if (!email || !password ) {
       toast.error('Please fill in all fields.');
       return;
     }
@@ -38,10 +37,6 @@ export default function CreateAccount() {
       return;
     }
 
-    if (password !== confirmPassword) {
-      toast.error('Passwords do not match.');
-      return;
-    }
 
     // Simulate account creation
     console.log('Creating account with:', { email, password });
@@ -66,7 +61,7 @@ export default function CreateAccount() {
               <div className="icon-and-button-parentdiv">
                 <Icon id="worldicon1" icon="tabler:world" />
                 <button onClick={goToLoginPage} id="btncreateaccount">
-                  Sign In
+                  Sign Up
                 </button>
               </div>
 
@@ -97,33 +92,10 @@ export default function CreateAccount() {
                     />
                   </div>
 
-                  <div className="smallandinputmaindiv1">
-                    <small>Confirm password</small>
-                    <input
-                      type="password"
-                      placeholder="Confirm password here"
-                      value={confirmPassword}
-                      onChange={(e) => setConfirmPassword(e.target.value)}
-                    />
-                    
-                  </div>
 
                   <button id='signbtn' type="submit">Sign Up</button>
                 </form>
 
-                <div className="signupline">
-                  <span>--- Or Sign in With ---</span>
-                </div>
-{/* 
-                <div className="facebookbtndiv">
-                  <img src={facebook} alt="" />
-                  <span>Sign up With Facebook</span>
-                </div> */}
-
-                <div id="googlebtndiv" className="facebookbtndiv">
-                  <img src={google} alt="" />
-                  <span>Sign up With Google</span>
-                </div>
               </div>
             </div>
           </Col>

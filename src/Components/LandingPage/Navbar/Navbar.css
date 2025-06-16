@@ -20,6 +20,15 @@
     list-style: none;
     margin: 0;
   }
+
+    .uflex li  {
+    font-size: 1.8rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: #616161;
+    transition: color 0.3s;
+  }
+  
   
   .uflex li a {
     font-size: 1.8rem;

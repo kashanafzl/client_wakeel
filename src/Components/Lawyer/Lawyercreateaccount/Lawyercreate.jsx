@@ -1,34 +1,33 @@
 import React, { useState } from 'react';
-import './CreateAccount.css';
+import './Lawyercrete.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import signuptolawyer from '../../Asserts/Img/law.svg';
-import facebook from '../../Asserts/Img/facebook.svg';
-import google from '../../Asserts/Img/google.svg';
-
+import signuptolawyer from '../../../Asserts/Img/law.svg';
 import { Icon } from '@iconify/react';
 import { useNavigate } from 'react-router-dom';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-export default function CreateAccount() {
+export default function Lawyercreate() {
   const navigate = useNavigate();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [barCode, setBarCode] = useState('');
+  const [specialization, setSpecialization] = useState('');
 
   const goToLoginPage = () => {
-    navigate('/login');
+    navigate('/lawyerlogin');
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!email || !password || !confirmPassword) {
+    if (!email || !password || !confirmPassword || !barCode || !specialization) {
       toast.error('Please fill in all fields.');
       return;
     }
@@ -44,9 +43,14 @@ export default function CreateAccount() {
     }
 
     // Simulate account creation
-    console.log('Creating account with:', { email, password });
-    toast.success('Account created successfully! Redirecting...');
+    console.log('Creating account with:', {
+      email,
+      password,
+      barCode,
+      specialization,
+    });
 
+    toast.success('Account created successfully! Redirecting...');
     setTimeout(() => {
       navigate('/login');
     }, 2000);
@@ -105,25 +109,30 @@ export default function CreateAccount() {
                       value={confirmPassword}
                       onChange={(e) => setConfirmPassword(e.target.value)}
                     />
-                    
                   </div>
 
-                  <button id='signbtn' type="submit">Sign Up</button>
+                  <div className="smallandinputmaindiv1">
+                    <small>Bar Code</small>
+                    <input
+                      type="text"
+                      placeholder="Enter your Bar Code"
+                      value={barCode}
+                      onChange={(e) => setBarCode(e.target.value)}
+                    />
+                  </div>
+
+                  <div className="smallandinputmaindiv1">
+                    <small>Specialization</small>
+                    <input
+                      type="text"
+                      placeholder="Enter your Specialization"
+                      value={specialization}
+                      onChange={(e) => setSpecialization(e.target.value)}
+                    />
+                  </div>
+
+                  <button id="signbtn" type="submit">Sign Up</button>
                 </form>
-
-                <div className="signupline">
-                  <span>--- Or Sign in With ---</span>
-                </div>
-{/* 
-                <div className="facebookbtndiv">
-                  <img src={facebook} alt="" />
-                  <span>Sign up With Facebook</span>
-                </div> */}
-
-                <div id="googlebtndiv" className="facebookbtndiv">
-                  <img src={google} alt="" />
-                  <span>Sign up With Google</span>
-                </div>
               </div>
             </div>
           </Col>

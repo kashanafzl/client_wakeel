@@ -83,7 +83,7 @@ export default function Choose() {
                         
                   </div>
 
-                  <div id='picandtext'  className='Picandtextmaindiv'>
+                  {/* <div id='picandtext'  className='Picandtextmaindiv'>
                         
                         <div>
                             <img id='pic3' src={pic3} alt="" />
@@ -93,7 +93,7 @@ export default function Choose() {
                             <h6>Join As Admin</h6>
                             <p>Join To manage Everything</p>
                         </div>
-                  </div>
+                  </div> */}
 
 
                     </div>

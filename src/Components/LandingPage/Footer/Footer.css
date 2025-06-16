@@ -54,7 +54,7 @@
 /* Location Section */
 .footer-location {
     display: flex;
-    flex-direction: column;
+    gap: 2rem;
     align-items: center;
     text-align: center;
 }
@@ -71,6 +71,7 @@
 
 .mainfooterdiv h4 {
     font-size: 3rem;
+    /* padding-top: 5rem; */
 }
 
 .mainfooterdiv p {
