@@ -20,8 +20,11 @@ import { Link, useNavigate } from 'react-router-dom';
 export default function Choose() {
   const navigate = useNavigate(); 
 
-  const gothelawyer = () =>{
+  const gotheclient = () =>{
     navigate('/createaccount')
+  }
+  const gothelawyer = () =>{
+    navigate('/lawyercreateanaccount')
   }
 
 
@@ -51,25 +54,25 @@ export default function Choose() {
                       <h2>Sign Up To, Lawyer!</h2>
                       <p>how do you want join our wide community by becoming?</p>
 
-                      <div id='picandtext'  className='Picandtextmaindiv'>
+                      <div onClick={gotheclient} id='picandtext'  className='Picandtextmaindiv'>
 
                             <div>
                                 <img id='pic1' src={pic1} alt="" />
                             </div>
 
-                            <div className='heading6andparagraph'>
+                            <div  className='heading6andparagraph'>
                                 <h6>Join As Client</h6>
                                 <p>Unlock Your Expertise, Client Lives.</p>
                             </div>
                       </div>
 
-                      <div className='Picandtextmaindiv'>
+                      <div  onClick={gothelawyer}  className='Picandtextmaindiv'>
                        
                         <div>
                             <img id='pic2' src={pic2} alt="" />
                         </div>
 
-                        <div onClick={gothelawyer} className='greencheckiconparentdiv'>
+                        <div  className='greencheckiconparentdiv'>
                         <div className='heading6andparagraph'>
                             <h6>Join As Lawyer</h6>
                             <p id='secondpara'>Discover To see your cases.</p>

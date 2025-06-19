@@ -10,6 +10,7 @@ import Col from 'react-bootstrap/Col';
 
 import aboutuspic from '../../Asserts/Img/law.svg';
 import aboutman from '../../Asserts/Img/law.svg';
+import Video from '../LandingPage/Video/Video';
 
 export default function About() {
   useEffect(() => {
@@ -89,6 +90,9 @@ export default function About() {
             </Col>
           </Row>
         </Container>
+
+
+        <Video/>
       </div>
     </div>
   );

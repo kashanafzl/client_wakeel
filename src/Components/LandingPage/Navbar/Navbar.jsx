@@ -25,6 +25,9 @@ export default function Navbar() {
     const gotheaboutuspage = () => {
     navigate('/aboutus');
   };
+    const gotheblogpage = () => {
+    navigate('/blog');
+  };
 
 
   return (
@@ -38,6 +41,7 @@ export default function Navbar() {
       <ul className={`uflex ${menuOpen ? "open" : ""}`}>
         <li><a href="/">Home</a></li>
         <li onClick={gotheaboutuspage}>About Us</li>
+        <li onClick={gotheblogpage}>Blog</li>
         <li><a href="/">Practice Area</a></li>
         <li onClick={applythecase} >Apply To case</li>
       </ul>

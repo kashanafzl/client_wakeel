@@ -4,10 +4,8 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import CreateAccount from "./Components/CreateAccount-to-sana/CreateAccount";
+import CreateAccount from "./Components/CreateAccount-to-user/CreateAccount";
 import Verification from "./Components/Verification/Verification";
-import Profilestep1 from "./Components/Profilestep1/Profilestep1";
-import Profilestep2 from "./Components/Profilestep2/Profilestep2";
 import Login from "./Components/Login/Login";
 import About from "./Components/Aboutus/About";
 import Blog from "./Components/Blog/Blog";
@@ -39,8 +37,6 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/forgotpassword" element={<ForgotPassword />} />
         <Route path="/verification" element={<Verification />} />
-        <Route path="/profile" element={<Profilestep1 />} />
-        <Route path="/profile2" element={<Profilestep2 />} />
         <Route path="/aboutus" element={<About />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/applycase" element={<Applycase />} />
