@@ -1,0 +1,206 @@
+/* Base Container */
+.new-profile-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 50px 20px;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f2f3f7, #e3e5f0);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+@media (min-width: 1024px) {
+  .new-profile-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 100px;
+  }
+}
+
+/* Profile Card */
+.profile-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Avatar Section */
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-box {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #dcdcdc;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.avatar-img,
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.remove-avatar-btn {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 18px;
+  font-size: 13px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.remove-avatar-btn:hover {
+  background: #d9363e;
+}
+
+.username {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.user-role {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Form Card */
+.form-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 35px 30px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 800px;
+}
+
+.form-card h2 {
+  margin-bottom: 30px;
+  color: #222;
+  font-weight: 600;
+}
+
+/* Field Layout */
+.field-row {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .field-row {
+    flex-direction: row;
+  }
+}
+
+.form-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-field input {
+  padding: 12px 15px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.form-field input:focus {
+  border-color: #880c24;
+  box-shadow: 0 0 0 3px rgba(136, 12, 36, 0.1);
+}
+
+/* Password Visibility */
+.password-wrap {
+  position: relative;
+}
+
+.password-wrap input {
+  width: 100%;
+  padding-right: 45px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Forgot Password Link */
+.forgot-link {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Update Button */
+.update-btn-wrap {
+  text-align: right;
+}
+
+.update-btn {
+  padding: 12px 30px;
+  background-color: var(--bluecolor);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.update-btn:hover {
+  background-color: #0e2b49;
+}

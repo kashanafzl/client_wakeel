@@ -1,0 +1,73 @@
+.case-record-container {
+  padding: 3rem;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.case-record-title {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+.no-cases {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+.case-record-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+.record-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.record-card:hover {
+  transform: translateY(-4px);
+}
+
+.record-client-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.record-info p {
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 0.7rem;
+}
+
+.status-tag {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 8px;
+  display: inline-block;
+}
+
+.status-tag.pending {
+  background-color: #fbbf24;
+}
+
+.status-tag.accepted {
+  background-color: #10b981;
+}
+
+.status-tag.declined {
+  background-color: #ef4444;
+}

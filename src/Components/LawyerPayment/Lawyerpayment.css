@@ -1,0 +1,101 @@
+.lawyer-payment-container {
+  padding: 3rem;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #1f2937;
+}
+
+.payment-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.lawyer-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.lawyer-info p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+.status-tag {
+  padding: 4px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.status-tag.unpaid {
+  background-color: #f59e0b;
+}
+
+.status-tag.paid {
+  background-color: #10b981;
+}
+
+.payment-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.payment-form h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.payment-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.payment-form select,
+.payment-form input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.pay-btn {
+  padding: 0.7rem 1.5rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pay-btn:hover {
+  background-color: #1e40af;
+}
+
+@media screen and (max-width: 768px) {
+  .payment-card {
+    flex-direction: column;
+  }
+}

@@ -19,7 +19,11 @@ export default function Navbar() {
     navigate('/login');
   };
     const applythecase = () => {
-    navigate('/applycase');
+    navigate('/dashboard');
+  };
+
+    const gotheaboutuspage = () => {
+    navigate('/aboutus');
   };
 
 
@@ -33,7 +37,7 @@ export default function Navbar() {
       {/* Desktop Navigation */}
       <ul className={`uflex ${menuOpen ? "open" : ""}`}>
         <li><a href="/">Home</a></li>
-        <li><a href="/">About Us</a></li>
+        <li onClick={gotheaboutuspage}>About Us</li>
         <li><a href="/">Practice Area</a></li>
         <li onClick={applythecase} >Apply To case</li>
       </ul>

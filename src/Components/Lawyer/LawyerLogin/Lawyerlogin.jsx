@@ -66,7 +66,7 @@ export default function Lawyerlogin() {
               </div>
 
               <div className="createaccounth4andpdiv">
-                <h4>Create an Account</h4>
+                <h4>Login</h4>
                 <p>
                   Discover a world of natural remedies with our expert <br /> herbalists
                 </p>

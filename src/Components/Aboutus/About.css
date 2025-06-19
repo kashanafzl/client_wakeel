@@ -1,45 +1,83 @@
+.mainaboutdiv {
+  padding: 5rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+}
 
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-weight: 700;
+}
 
-.mainaboutdiv{
-    padding-inline: 2rem !important;
-    padding-block: 5rem !important;
-    font-family: 'Montserrat',  'sans-serif';
+.section-description {
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
 
+.aboutus-image-wrapper img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.aboutusmainsecdiv {
+  background: rgba(170, 145, 102, 0.14);
+  padding: 5rem 2rem;
+  margin-block: 5rem;
+}
+
+.aboutmanpicdiv img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
 }
 
 
-
-.aboutusdiv img{
-    width: 500px;
-    height: 200px;
+.rules-section {
+  background-color: #f9f9f9;
+  padding: 5rem 2rem;
 }
 
-.aboutusmainsecdiv{
-    background: rgba(170, 145, 102, 0.14);
-    padding-top: 5rem !important;
-    margin-block: 5rem !important;
+.rules-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-
-.aboutmanpicdiv img{
-    height: 250px;
-    width: 350px;
+.rules-list {
+  list-style-type: disc;
+  padding-left: 2rem;
+  padding-top: 4rem;
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+  color: #333;
 }
 
-
-.whatiidiv{
-    text-align: center;
+.rules-list li {
+  margin-bottom: 1rem;
 }
 
-
-.utubevideo img{
-    width: 800px;
-    height: 500px;
-}
-
-@media screen and (max-width:500px) {
-    .utubevideo img{
-  display: none;
-    }
-    
+@media screen and (max-width: 768px) {
+  .rules-list {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
 }

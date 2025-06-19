@@ -1,0 +1,131 @@
+.mycase-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.mycase-heading {
+  text-align: center;
+  font-size: 32px;
+  color: #880c24;
+  margin-bottom: 40px;
+}
+
+.case-card {
+  background-color: #fff;
+  border-left: 6px solid #880c24;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  margin-bottom: 25px;
+  transition: 0.3s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.case-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.case-header h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.status {
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background-color: #fdd835;
+  color: #333;
+}
+
+.status.in-review {
+  background-color: #29b6f6;
+  color: white;
+}
+
+.status.resolved {
+  background-color: #66bb6a;
+  color: white;
+}
+
+.case-date {
+  font-size: 14px;
+  color: #777;
+  margin-top: 8px;
+}
+
+.case-description {
+  margin-top: 15px;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.view-btn {
+  margin-top: 20px;
+  background-color: #880c24;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #6c081d;
+}
+/* Modal Popup */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff; /* changed to dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff !important;
+  padding: 30px;
+  border-radius: 15px;
+  font-size: 15px;
+  width: 100%;
+  max-width: 500px !important;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.close-modal {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #880c24;
+}

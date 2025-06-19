@@ -39,9 +39,9 @@
 }
 
 .case-card p {
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   color: #555;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .case-card button {

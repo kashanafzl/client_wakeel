@@ -1,0 +1,126 @@
+.lawyer-dashboard {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #f8fafc, #e2e8f0);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.lawyer-dashboard h2{
+  margin-bottom: 2rem;
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 3rem;
+}
+
+.case-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2rem;
+}
+
+.case-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 6px solid #6366f1;
+  position: relative;
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.client-name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.client-info p {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.status.Pending {
+  background-color: #facc15;
+  color: #1f2937;
+}
+
+.status.Accepted {
+  background-color: #22c55e;
+  color: white;
+}
+
+.status.Declined {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-group {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 0.8rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.btn.accept {
+  background-color: #10b981;
+  color: white;
+}
+
+.btn.accept:hover {
+  background-color: #059669;
+}
+
+.btn.decline {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn.decline:hover {
+  background-color: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .dashboard-title {
+    font-size: 2rem;
+  }
+
+  .client-name {
+    font-size: 1.6rem;
+  }
+
+  .case-card {
+    padding: 2rem;
+  }
+}

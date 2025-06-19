@@ -4,7 +4,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import signuptolawyer from '../../Asserts/Img/law.svg';
-
 import google from '../../Asserts/Img/google.svg';
 
 import { Icon } from '@iconify/react';
@@ -19,7 +18,6 @@ export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-
   const goToLoginPage = () => {
     navigate('/createaccount');
   };
@@ -27,7 +25,7 @@ export default function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!email || !password ) {
+    if (!email || !password) {
       toast.error('Please fill in all fields.');
       return;
     }
@@ -37,14 +35,16 @@ export default function Login() {
       return;
     }
 
-
-    // Simulate account creation
-    console.log('Creating account with:', { email, password });
-    toast.success('Account created successfully! Redirecting...');
+    console.log('Logging in with:', { email, password });
+    toast.success('Login successful! Redirecting...');
 
     setTimeout(() => {
-      navigate('/login');
+      navigate('/dashboard'); // Or wherever you want to redirect after login
     }, 2000);
+  };
+
+  const handleForgotPassword = () => {
+    navigate('/forgotpassword');
   };
 
   return (
@@ -61,12 +61,12 @@ export default function Login() {
               <div className="icon-and-button-parentdiv">
                 <Icon id="worldicon1" icon="tabler:world" />
                 <button onClick={goToLoginPage} id="btncreateaccount">
-                  Sign In
+                  Sign Up
                 </button>
               </div>
 
               <div className="createaccounth4andpdiv">
-                <h4>Create an Account</h4>
+                <h4>Login</h4>
                 <p>
                   Discover a world of natural remedies with our expert <br /> herbalists
                 </p>
@@ -92,22 +92,31 @@ export default function Login() {
                     />
                   </div>
 
+                  {/* ✅ Forgot Password Link */}
+                  <div style={{ textAlign: 'right', marginBottom: '1rem' , fontSize : '1.5rem' }}>
+                    <span
+                      onClick={handleForgotPassword}
+                      style={{
+                        color: '#2c3e50',
+                        cursor: 'pointer',
+                        fontWeight: '500',
+                        textDecoration: 'underline',
+                      }}
+                    >
+                      Forgot Password?
+                    </span>
+                  </div>
 
-                  <button id='signbtn' type="submit">Sign Up</button>
+                  <button id="signbtn" type="submit">Sign In</button>
                 </form>
 
                 <div className="signupline">
                   <span>--- Or Sign in With ---</span>
                 </div>
-{/* 
-                <div className="facebookbtndiv">
-                  <img src={facebook} alt="" />
-                  <span>Sign up With Facebook</span>
-                </div> */}
 
                 <div id="googlebtndiv" className="facebookbtndiv">
                   <img src={google} alt="" />
-                  <span>Sign up With Google</span>
+                  <span>Sign in With Google</span>
                 </div>
               </div>
             </div>

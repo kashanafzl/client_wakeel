@@ -1,0 +1,168 @@
+.unique-profile-wrapper {
+  background: linear-gradient(to right, #eff6ff, #fef9f9);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.unique-profile-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  width: 100%;
+  max-width: 1080px;
+}
+
+.profile-side {
+  background: linear-gradient(to bottom right, #2A446F, #2A446F);
+  color: white;
+  padding: 3rem 2rem;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-profile-pic {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 1rem;
+}
+
+.lawyer-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.lawyer-specialty {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+.lawyer-location {
+  font-size: 0.95rem;
+  margin-top: auto;
+  color: #e0e7ff;
+}
+
+.profile-main {
+  flex: 2;
+  padding: 3rem 2.5rem;
+  background: #f9fafb;
+}
+
+.section-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #374151;
+  font-size: 16px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.input-group.full-width textarea {
+  resize: vertical;
+}
+
+.update-btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2.5rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.update-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.header-with-edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-toggle-btn {
+  background-color: transparent;
+  border: none;
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s;
+  border-radius: 6px;
+}
+
+.edit-toggle-btn:hover {
+  background-color: #e0e7ff;
+}
+
+.image-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-pic-btn {
+  margin-top: 0.8rem;
+  background-color: white;
+  color: #111827;
+  border: 1px solid #d1d5db;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.edit-pic-btn:hover {
+  background-color: #f3f4f6;
+}

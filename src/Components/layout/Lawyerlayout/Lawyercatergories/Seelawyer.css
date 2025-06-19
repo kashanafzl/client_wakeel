@@ -1,0 +1,167 @@
+.client-container {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #222;
+  position: relative;
+  animation: slideDown 0.7s ease-in-out;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--bluecolor);
+  margin: 10px auto 0;
+  border-radius: 2px;
+  animation: expandLine 1s ease;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 50px;
+  animation: fadeInUp 0.9s ease-in-out;
+}
+
+.category-list button {
+  padding: 10px 22px;
+  background-color: #eee;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.category-list button:hover,
+.category-list .active {
+  background-color: var(--bluecolor);
+  color: white;
+  transform: scale(1.05);
+}
+
+.lawyer-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  animation: fadeInUp 1s ease;
+}
+
+.lawyer-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0;
+  animation: popIn 0.6s ease forwards;
+}
+
+.lawyer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.lawyer-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border: 3px solid #e0e0e0;
+}
+
+.lawyer-card h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.lawyer-card p {
+  margin: 4px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.lawyer-card .rating {
+  font-size: 18px;
+  color: #f5b301;
+  margin-top: 6px;
+}
+
+.view-btn {
+  margin-top: 14px;
+  padding: 10px 22px;
+  background-color: var(--bluecolor);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #0047cc;
+  transform: scale(1.05);
+}
+
+/* --- Animations --- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expandLine {
+  from { width: 0; }
+  to { width: 60px; }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
